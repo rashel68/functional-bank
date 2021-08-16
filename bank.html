@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank</title>
+    <!-- tailwind css cdn link  -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="my-10">
+        <h1 class="text-center text-5xl font-semibold py-4 bg-gray-200">Let's get some <span
+                class="text-purple-500 font-bold">Moooney
+                !!</span></h1>
+    </header>
+
+    <main>
+        <!-- display amount part  -->
+        <section class="grid grid-cols-3 gap-4 w-3/4 mx-auto">
+            <div class="p-8 bg-green-400 text-center rounded font-semibold text-white">
+                <h4 class="text-4xl">Deposit</h4>
+                <h2 class="text-5xl my-6">$<span id="deposit">00</span></h2>
+            </div>
+            <div class="p-8 bg-yellow-400 text-center rounded font-semibold text-white">
+                <h4 class="text-4xl">Withdraw</h4>
+                <h2 class="text-5xl my-6">$<span id="withdraw">00</span></h2>
+            </div>
+            <div class="p-8 bg-blue-400 text-center rounded font-semibold text-white">
+                <h4 class="text-4xl">Balance</h4>
+                <h2 class="text-5xl my-6">$<span id="balance">105</span></h2>
+            </div>
+        </section>
+
+        <!-- input amount and button part  -->
+        <section class="w-3/4 mx-auto grid grid-cols-2 gap-4 mt-8">
+            <div class="py-4 px-8 rounded bg-green-100">
+                <h2 class="text-3xl">Please Deposit</h2>
+                <input class="block w-full p-2 my-6 rounded border-2" type="text" name=""
+                    placeholder="Deposit your money" id="depoInput">
+                <button id="depoBtn" class="px-6 py-2 rounded bg-gray-600 text-white">Deposit</button>
+            </div>
+            <div class="py-4 px-8 rounded bg-red-100">
+                <h2 class="text-3xl">Withdraw Money</h2>
+                <input class="block w-full p-2 my-6 rounded border-2" type="text" name="" placeholder="Withdraw Money"
+                    id="withdrawInput">
+                <button id="withdrawBtn" class="px-6 py-2 rounded bg-gray-600 text-white">Withdraw</button>
+            </div>
+        </section>
+    </main>
+
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
